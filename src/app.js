@@ -12,7 +12,7 @@ const app = express();
 //https://sato.identitytests.net  http://localhost:5173
 app.use(
     cors({
-        origin: "https://www.sato-studio.app", // Frontend URL
+        origin: ["https://www.sato-studio.app", "https://react-frontend-dun-chi.vercel.app"], // Frontend URL
         credentials: true, // Allow sending cookies
     })
 );
