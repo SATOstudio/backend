@@ -328,9 +328,9 @@ exports.deleteFolder = async (req, res, next) => {
         }
 
         // Authorization check: Ensure folder belongs to the user
-        if (folderToDelete.userId.toString() !== userId.toString()) {
-            return res.status(403).json({ message: 'Unauthorized: You do not have permission to delete this folder.' });
-        }
+        // if (folderToDelete.userId.toString() !== userId.toString()) {
+        //     return res.status(403).json({ message: 'Unauthorized: You do not have permission to delete this folder.' });
+        // }
 
         // Consider adding checks to prevent deleting non-empty folders or handle contained files
 
